@@ -109,8 +109,13 @@ width van ipad: 768
         margin-bottom: 0.8em;
     }
 
-    fieldset.inactive {
+    main form #project:not(.visible),
+    main form #stage:not(.visible) {
         display: none;
+    }
+
+    fieldset.active {
+        display: block;
     }
 
     /* Hieronder staat het blokken css */
