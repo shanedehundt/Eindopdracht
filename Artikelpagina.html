@@ -10,7 +10,7 @@
     <body>
 
         <!-- header met logo & navigatie -->
-        <header name="navigatie">
+        <header id="navigatie">
             <h1>CMD Amsterdam - Intranet</h1>
             <p>Communication and Multimedia Design is een ontwerpopleiding voor interactieve media in Amsterdam.</p>
             <img class="logo" src="img/cmd_logo.png" alt="">
@@ -67,11 +67,8 @@
                     <h3>Beroepen</h3>
                     <h4>Waar leiden we voor op?</h4>
 
-                    <picture>
-                        <source srcset="img/beroepen_small.jpg" media="(max-width: 25em)">
-                        <source srcset="img/beroepen.jpg">
-                        <img class="cmd_beroepen" srcset="img/beroepen.jpg" alt="default image van de beroepen die cmd aanbied met cmd">
-                    </picture>
+
+                    <img class="cmd_beroepen" srcset="img/beroepen.jpg" alt="default image van de beroepen die cmd aanbied met cmd">
 
                     <p>Studenten kunnen na deze opleiding aan het werk in een grote diversiteit aan beroepen in het interactieve media werkveld. Tijdens de opleiding kunnen zij zich – naast het generieke kernprogramma – middels de profileringsvakken individueel ontwikkelen.</p>
                     <p>Afgestudeerde studenten komen daarmee in aanmerking voor o.a. de volgende vijf beroepen: Visual Interface Designer, Frontend Developer, Projectmanager, Contentmanager en Interaction Designer. Variaties hierop zijn natuurlijk mogelijk.</p>
@@ -90,6 +87,13 @@
                     <source src="videos/CMDA_V2_Frontend_2.webm" type="video/mp4">
                     <source src="videos/CMDA_V2_Frontend_2.mp4" type="video/mp4">
                 </video>
+
+                <picture>
+                    <source media="(min-width: 80em)" srcset="img/picture_fed_1280.png">
+                    <source media="(min-width: 50em)" srcset="img/picture_fed_800.png">
+                    <source media="(min-width: 30em)" srcset="img/picture_fed_480.png">
+                    <img src="img/picture_fed_480" alt="standaard foto">
+                </picture>
 
             </article>
 

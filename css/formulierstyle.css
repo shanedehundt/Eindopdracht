@@ -1,3 +1,8 @@
+/*
+width van iphone: 320
+width van ipad: 768
+*/
+
 /*Dit is de dektop versie*/
 @media screen and (min-width: 48em) {
 
@@ -6,11 +11,19 @@
         height: auto;
     }
 
+    html {
+        height: 100%;
+    }
+
     body {
         width: 150%;
         display: flex;
+        max-height: 100%;
         flex-direction: row;
         font-family: Roboto, sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-y: hidden;
     }
 
     .cmd_beroepen {
@@ -86,14 +99,20 @@
         height: auto;
     }
 
+    main a {
+        visibility: hidden;
+        position: absolute;
+    }
+
     main form fieldset label {
         display: block;
         margin-bottom: 0.8em;
     }
 
-    fieldset.active {
-        display: block;
+    fieldset.inactive {
+        display: none;
     }
+
     /* Hieronder staat het blokken css */
     /* http://www.cssmatic.com/box-shadow gebruikt als generator voor de box shadow */
 
@@ -106,6 +125,7 @@
     main {
         padding: 1em;
         min-width: 25em;
+        overflow: scroll;
         background-color: #f9cf00;
         box-shadow: inset 0px 0px 135px -24px rgba(0,0,0,0.63);
     }
@@ -114,22 +134,26 @@
         padding: 1em;
         max-width: 27em;
         min-width: 25em;
+        overflow: scroll;
         background-color: aliceblue;
         box-shadow: inset 0px 0px 135px -24px rgba(0,0,0,0.63);
     }
 
     aside {
         padding: 1em;
+        overflow: scroll;
         background-color: #f9cf00;
         box-shadow: inset 0px 0px 135px -24px rgba(0,0,0,0.63);
     }
 
     body > footer {
         padding: 1em;
+        overflow: scroll;
         background-color: aliceblue;
         box-shadow: inset 0px 0px 135px -24px rgba(0,0,0,0.63);
     }
 }
+
 /*Dit is de tablet versie*/
 @media screen and (max-width: 48em) and (min-width: 25em) {
     .logo {
@@ -176,10 +200,11 @@
         height: auto;
     }
 
-    main form fieldset label {
-        display: block;
-        margin-bottom: 0.8em;
+    main a {
+        visibility: hidden;
+        position: absolute;
     }
+
     /* Navigatie */
 
     nav li {
@@ -214,6 +239,14 @@
         margin-right: auto;
     }
 
+    main form fieldset label {
+        display: block;
+        margin-bottom: 0.8em;
+    }
+
+    fieldset.inactive {
+        display: block;
+    }
 
 
     /* Hieronder staat het blokken css */
@@ -289,18 +322,25 @@
 
     }
 
+    .cmd_beroepen {
+        max-width: 100%;
+        height: auto;
+    }
+
     main article video {
         width: 100%;
         height: auto;
     }
 
-    main form fieldset label {
-        display: block;
-        margin-bottom: 0.8em;
+    main a {
+        visibility: visible;
+        position: inherit;
     }
 
-    .related section ul li {
-        max-width: 100%;
+    main a img {
+        max-width: 3em;
+        height: auto;
+        float: right;
     }
     /* Navigatie */
 
@@ -334,6 +374,15 @@
         display: block;
         margin-left: auto;
         margin-right: auto;
+    }
+
+    main form fieldset label {
+        display: block;
+        margin-bottom: 0.8em;
+    }
+
+    fieldset.active {
+        display: block;
     }
 
     /* Hieronder staat het blokken css */

@@ -2,15 +2,15 @@
 
 function projectRead() {
     document.getElementById("projectBtn").onclick = function () {
-        document.getElementById("project").classlist.add('active');
-        document.getElementById("stage").classlist.add('active');
+        document.getElementById("project").classlist.add('inactive');
+        document.getElementById("stage").classlist.remove('inactive');
     };
 }
 
 function stageRead() {
     document.getElementById("stageBtn").onclick = function () {
-        document.getElementById("stage").classList.add('active');
-        document.getElementById("project").classList.remove('active')
+        document.getElementById("stage").classList.add('inactive');
+        document.getElementById("project").classList.remove('inactive');
     };
 }
 

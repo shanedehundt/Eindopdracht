@@ -11,11 +11,19 @@ width van ipad: 768
         height: auto;
     }
 
+    html {
+        height: 100%;
+    }
+
     body {
         width: 150%;
         display: flex;
+        max-height: 100%;
         flex-direction: row;
         font-family: Roboto, sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow-y: hidden;
     }
 
     .cmd_beroepen {
@@ -96,6 +104,11 @@ width van ipad: 768
         position: absolute;
     }
 
+    main article picture img {
+        max-width: 100%;
+        height: auto;
+    }
+
     /* Hieronder staat het blokken css */
     /* http://www.cssmatic.com/box-shadow gebruikt als generator voor de box shadow */
 
@@ -108,7 +121,6 @@ width van ipad: 768
     main {
         padding: 1em;
         min-width: 25em;
-        height: 55em;
         overflow: scroll;
         background-color: #f9cf00;
         box-shadow: inset 0px 0px 135px -24px rgba(0,0,0,0.63);
@@ -118,7 +130,6 @@ width van ipad: 768
         padding: 1em;
         max-width: 27em;
         min-width: 25em;
-        height: 55em;
         overflow: scroll;
         background-color: aliceblue;
         box-shadow: inset 0px 0px 135px -24px rgba(0,0,0,0.63);
@@ -126,7 +137,6 @@ width van ipad: 768
 
     aside {
         padding: 1em;
-        height: 55em;
         overflow: scroll;
         background-color: #f9cf00;
         box-shadow: inset 0px 0px 135px -24px rgba(0,0,0,0.63);
@@ -134,7 +144,6 @@ width van ipad: 768
 
     body > footer {
         padding: 1em;
-        height: 55em;
         overflow: scroll;
         background-color: aliceblue;
         box-shadow: inset 0px 0px 135px -24px rgba(0,0,0,0.63);
