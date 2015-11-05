@@ -109,13 +109,17 @@ width van ipad: 768
         margin-bottom: 0.8em;
     }
 
-    main form #project:not(.visible),
-    main form #stage:not(.visible) {
+    main form #project:not(.active),
+    main form #stage:not(.active) {
         display: none;
     }
 
-    fieldset.active {
+    .active {
         display: block;
+    }
+
+    main form fieldset input {
+        height: 2em;
     }
 
     /* Hieronder staat het blokken css */
@@ -146,6 +150,7 @@ width van ipad: 768
 
     aside {
         padding: 1em;
+        min-width: 15em;
         overflow: scroll;
         background-color: #f9cf00;
         box-shadow: inset 0px 0px 135px -24px rgba(0,0,0,0.63);
@@ -153,6 +158,7 @@ width van ipad: 768
 
     body > footer {
         padding: 1em;
+        min-width: 13em;
         overflow: scroll;
         background-color: aliceblue;
         box-shadow: inset 0px 0px 135px -24px rgba(0,0,0,0.63);
@@ -249,8 +255,17 @@ width van ipad: 768
         margin-bottom: 0.8em;
     }
 
-    fieldset.inactive {
+    main form #project:not(.active),
+    main form #stage:not(.active) {
+        display: none;
+    }
+
+    .active {
         display: block;
+    }
+
+    main form fieldset input {
+        height: 2em;
     }
 
 
@@ -386,8 +401,17 @@ width van ipad: 768
         margin-bottom: 0.8em;
     }
 
-    fieldset.active {
+    main form #project:not(.active),
+    main form #stage:not(.active) {
+        display: none;
+    }
+
+    .active {
         display: block;
+    }
+
+    main form fieldset input {
+        height: 2em;
     }
 
     /* Hieronder staat het blokken css */

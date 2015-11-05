@@ -137,6 +137,7 @@ width van ipad: 768
 
     aside {
         padding: 1em;
+        min-width: 15em;
         overflow: scroll;
         background-color: #f9cf00;
         box-shadow: inset 0px 0px 135px -24px rgba(0,0,0,0.63);
@@ -144,6 +145,7 @@ width van ipad: 768
 
     body > footer {
         padding: 1em;
+        min-width: 13em;
         overflow: scroll;
         background-color: aliceblue;
         box-shadow: inset 0px 0px 135px -24px rgba(0,0,0,0.63);

@@ -4,8 +4,8 @@ var projectButton = document.getElementById('projectBtn');
 var stageButton = document.getElementById('stageBtn');
 
 projectButton.addEventListener('click', function(){
-    document.getElementById("project").classlist.add('active');
-    document.getElementById("stage").classlist.remove('active');
+    document.getElementById("project").classList.add('active');
+    document.getElementById("stage").classList.remove('active');
 });
 
 stageButton.addEventListener('click', function(){
